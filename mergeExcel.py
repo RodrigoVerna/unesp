@@ -6,5 +6,7 @@
 import pandas as pd
 
 # Carregar dados
-alostericSites = pd.read_csv('data\AlostericSitesaa.csv')
-print(alostericSites.shape)
+alostericSites = pd.read_csv("unesp\data\AlostericSitesaa.csv", sep=',', on_bad_lines='skip', 
+                                low_memory=False)
+
+print(alostericSites.head(5))
